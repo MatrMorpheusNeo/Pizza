@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+{% for item in all_pizzas %}
+    <a href = "/pizzas/{{item.id}}">{{item.name}}</a>
+    {{item.description}}
+    {{item.price}}
+{%endfor%}
+
+{% endblock %}
